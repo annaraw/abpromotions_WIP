@@ -38,7 +38,9 @@ html {
 
 
 .featured-text  { color: var(--featured); } 
-.lolevel-text {color: var(--lolevel_color);}
+.lolevel-text {
+    color: var(--lolevel_color);
+    font-size:28px;}
 .body-text {color: var(--lolevel_color);}
 
 
@@ -46,7 +48,10 @@ html {
 
 body {
     font-family: var(--bodey);
+    font-size: 20px;
     background-color: var(--featured);
+    font-weight: 800;
+    color: #887d70;
 }
 
 
