@@ -1,0 +1,130 @@
+
+/* @import url(https://fonts.googleapis.com/css2?family=Orbitron); */
+
+:root{
+    --featured: #FAEBD7;
+    --lolevel_color: #887d70;
+    --bodey: 'Montserrat', sans-serif;
+    --heading: 'Orbitron', sans-serif;
+    
+
+}
+
+[class*=grid] { 
+    margin: 0;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+/* Re-usable Utiity Classes  */
+.tall-50 { min-height: 50vh; }
+.tall-60 { min-height: 60vh; }
+.tall-70 { min-height: 70vh; }
+.tall-80 { min-height: 80vh; }
+.tall-90 { min-height: 90vh; }
+.tall-100 { min-height: 100vh; }
+
+.padded    { padding: 5%;   }
+
+
+.featured-text  { color: var(--featured); } 
+.lolevel-text {color: var(--lolevel_color);}
+.body-text {color: var(--lolevel_color);}
+
+
+
+
+body {
+    font-family: var(--bodey);
+    background-color: var(--featured);
+}
+
+
+h1,h2 {
+    font-weight: normal;
+    font-family: var(--heading);
+}
+
+h3 {
+    font-family: var(--bodey);
+    font-weight: medium;
+    font-size: 25px;
+
+}
+
+/* General typography and universal styles */
+
+h1 {
+    font-size: 5rem;
+    line-height: 0.8;
+}
+
+h1 span {
+    margin-top: 20px;
+    display: block;
+    font-size: 3rem;
+    line-height: 0.9;
+    /* color: var(--lolevel_color); */
+}
+
+
+
+
+/*Images & Background Images */
+ .bg-image {
+    background-color: var(--featured);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.bg-imagefull {
+    background-color: var(--featured);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.image-grid {
+    --num-cols: 2;
+    --row-height: 300px;
+
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(var(--num-cols) 1fr);
+}
+
+.bg-intro {background-image: url('intro-weich.jpg')}
+.bg-professional {background-image: url('professional.jpeg');}
+
+
+
+
+/* Gridlex SM  */
+@media(max-width: 48em) {
+    .mob-hide { display: none; }
+
+    .mob-padded-t-0 { padding-top: 0; }
+
+    h1 { font-size: 6rem; }
+    h1 span { font-size: 2rem; }  
+    
+    footer a { font-size: 1rem;}
+}
+
+/* Custom Media Query XXS  */
+@media(max-width: 25em) {
+    h1 { font-size: 4.5rem; }
+    h1 span { font-size: 1.5rem; }  
+}
